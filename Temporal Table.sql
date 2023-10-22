@@ -27,13 +27,13 @@ BEGIN
 	
 			(
 			ProductId						NVARCHAR(100),
-			ProductionId					UNIQUEIDENTIFIER,
+			ProductionId					        UNIQUEIDENTIFIER,
 			ProductName						NVARCHAR(200),
 			Category						NVARCHAR(200),
 			WarehouseId						VARCHAR(100),
 			Region							VARCHAR(100),
-			Warehouse					    NVARCHAR(100),
-			DeficiencyStatus				VARCHAR(50)
+			Warehouse					        NVARCHAR(100),
+			DeficiencyStatus					VARCHAR(50)
 			)
 
 	
@@ -71,14 +71,14 @@ BEGIN
 	
 			(
 			ProductId						NVARCHAR(100) PRIMARY KEY,
-			ProductionId					NVARCHAR(200),
+			ProductionId						NVARCHAR(200),
 			ProductName						NVARCHAR(200),
 			Category						NVARCHAR(200),
 			WarehouseId						VARCHAR(100),
 			Region							VARCHAR(50),
 			Warehouse						VARCHAR(100),
-			DeficiencyStatus				VARCHAR(50),
-			SysStartTime					DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
+			DeficiencyStatus					VARCHAR(50),
+			SysStartTime						DATETIME2 GENERATED ALWAYS AS ROW START NOT NULL,
 			SysEndTime						DATETIME2 GENERATED ALWAYS AS ROW END NOT NULL,
 			PERIOD FOR SYSTEM_TIME (SysStartTime, SysEndTime)
 
