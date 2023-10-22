@@ -63,7 +63,7 @@ BEGIN
 	on w.WarehouseId = l.WarehouseId
 
 
-----Creates the Temporal table dbo.ApplicationServerTracker for the first time
+----Creates the Temporal table dbo.ProductionTracker for the first time
 	
 	IF OBJECT_ID('dbo.ProductionTracker', 'U') IS NULL
 	BEGIN
