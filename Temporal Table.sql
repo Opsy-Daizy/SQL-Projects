@@ -11,7 +11,7 @@ GO
 */
 
 -- Create the procedure 
-ALTER PROCEDURE dbo.ProductionHistory AS
+CREATE PROCEDURE dbo.ProductionHistory AS
 
 BEGIN
 
